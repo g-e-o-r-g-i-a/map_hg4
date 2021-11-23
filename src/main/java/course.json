@@ -1,0 +1,19 @@
+[ {
+  "name" : "MAP",
+  "teacher" : 1,
+  "maxEnrollment" : 20,
+  "StudentsEnrolled" : [ 1 ],
+  "credits" : 6,
+  "id" : 1,
+  "NumberOfEmptyPlaces" : 12,
+  "Free" : true
+}, {
+  "name" : "ASC",
+  "teacher" : 2,
+  "maxEnrollment" : 30,
+  "StudentsEnrolled" : [ 15 ],
+  "credits" : 6,
+  "id" : 2,
+  "NumberOfEmptyPlaces" : 9,
+  "Free" : true
+} ]
