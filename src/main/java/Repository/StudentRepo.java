@@ -138,6 +138,14 @@ public class StudentRepo extends InMemoryRepo<Student> implements FileRepo<Stude
         return false;
     }
 
+    public boolean validationAddCourse(Student student, Course course) {
+        if (!repoList.contains(student))
+            return false;
+
+        return student.getEnoughCredits() >= course.getCredits();
+    }
+
+
     /**
      * sortez lista studentilor in functie de numarul de credite
      */

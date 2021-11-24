@@ -116,15 +116,7 @@ public class CourseContr implements Contr<Course> {
     }
 
 
-    public boolean modifyCredits(int credits, Long idCourse) throws IOException, Exception2 {
-        int oldCredits = courseRepo.modifyCredits(credits,idCourse);
-        if(oldCredits != -1)
-        {
-            studentRepo.modifyCredits(credits,idCourse,oldCredits);
-            return true;
-        }
-        return false;
-    }
+
 
     public boolean register(Student student, Course course) throws IOException, Exception2 {
         if(courseRepo.hasFreePlace(course.getID()) && studentRepo.validationAddCourse(student, course))

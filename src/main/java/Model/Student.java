@@ -116,5 +116,14 @@ public class Student extends Person implements Comparable<Student>{
 
     }
 
+    /**
+     * calculez cate credite am nevoie pana la 3o
+     * @return numarul de credite
+     */
+    public int getEnoughCredits()
+    {
+        return (30 - this.getTotalCredits());
+    }
+
 
 }

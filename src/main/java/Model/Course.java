@@ -16,7 +16,7 @@ public class Course implements Comparable<Course>{
         this.ID = ID;
         this.teacher = teacher;
         this.maxEnrollment = maxEnrollment;
-        this.studentsEnrolled = new ArrayList<>();
+        this.studentsEnrolled = studentsEnrolled;
         this.credits = credits;
     }
 

@@ -103,9 +103,8 @@ public class KonsoleView {
                     id = keyboard.nextLong();
                     if (courseContr.containsID(id)) {
                         studentContr.studTospecifcCourse(id);
-                    }
-                    case 4 -> {
-                        case 3 -> {
+                    } }
+                case 4 -> {
                             getMenuShow();
                             getFunctionGetAll();
                         }
@@ -113,11 +112,11 @@ public class KonsoleView {
                             getAddMenu();
                             getFunctionAdd();
                         }
-                        case 6 -> {
+                    case 6 -> {
                             getMenuSortFilter();
                             getFunctionSortFilter();
                         }
-                        case 7 -> {
+                    case 7 -> {
                             System.out.println("EXIT");
                             System.exit(0);
                         }
@@ -126,8 +125,8 @@ public class KonsoleView {
                 }
 
             }
-        }
-    }
+
+
 
 
     public Student createStudent()
@@ -164,7 +163,7 @@ public class KonsoleView {
 
     }
 
-    public Course createCourse()
+    /*public Course createCourse()
     {
         Scanner scan= new Scanner(System.in);
         System.out.println("Name:");
@@ -196,7 +195,7 @@ public class KonsoleView {
 
         return new Course(name,id,idTeacher,maxEnrollment,credits);
 
-    }
+    }*/
 
 
     public void getMenuSortFilter()
@@ -263,8 +262,8 @@ public class KonsoleView {
 
         switch (key) {
             case 1 -> {
-                Course course = this.createCourse();
-                courseContr.create(course);
+                //Course course = this.createCourse();
+               // courseContr.create(course);
             }
             case 2 -> {
                 Teacher teacher = this.createTeacher();
@@ -312,5 +311,5 @@ public class KonsoleView {
         }
     }
 }
-}
+
 
